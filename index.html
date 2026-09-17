@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyMovies</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+
+            <a href="#" class="logo">
+                My<span>Movies</span>
+            </a>
+
+            <nav class="nav">
+                <a href="#" class="nav-link nav-link-active">Accueil</a>
+                <a href="#" class="nav-link">Mes films</a>
+                <a href="#" class="nav-link">Favoris</a>
+            </nav>
+
+            <button class="add-button" id="openForm">
+                + Ajouter un film
+            </button>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="hero container">
+
+            <div class="hero-content">
+
+                <p class="hero-subtitle">MON CINÉMA</p>
+
+                <h1 class="hero-title">
+                    Tous les films<br>
+                    que j'ai vus.
+                </h1>
+
+                <p class="hero-description">
+                    Garde une trace de tous les films que tu as regardés
+                    et retrouve facilement tes préférés.
+                </p>
+
+                <button class="hero-button" id="openFormHero">
+                    + Ajouter un film
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="stats container">
+
+            <div class="stat-card">
+                <span class="stat-number" id="movieCount">0</span>
+                <span class="stat-label">Films vus</span>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-number">8.4</span>
+                <span class="stat-label">Note moyenne</span>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-number">0</span>
+                <span class="stat-label">Favoris</span>
+            </div>
+
+        </section>
+
+
+        <!-- AJOUTER UN FILM -->
+        <section class="add-section container" id="addSection">
+
+            <div class="add-box">
+
+                <div>
+                    <p class="section-subtitle">MA COLLECTION</p>
+
+                    <h2 class="section-title">
+                        Ajouter un film
+                    </h2>
+                </div>
+
+                <div class="form">
+
+                    <input
+                        type="text"
+                        id="movieTitle"
+                        class="movie-input"
+                        placeholder="Nom du film..."
+                    >
+
+                    <input
+                        type="text"
+                        id="movieYear"
+                        class="movie-input"
+                        placeholder="Année"
+                    >
+
+                    <input
+                        type="text"
+                        id="movieImage"
+                        class="movie-input"
+                        placeholder="URL de l'affiche"
+                    >
+
+                    <button class="add-movie-button" id="addMovie">
+                        Ajouter
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MES FILMS -->
+        <section class="movies-section container">
+
+            <div class="section-header">
+
+                <div>
+                    <p class="section-subtitle">MA COLLECTION</p>
+
+                    <h2 class="section-title">
+                        Mes films
+                    </h2>
+                </div>
+
+            </div>
+
+
+            <!-- js pose les films ici -->
+            <div class="movies-grid" id="moviesGrid">
+
+            </div>
+
+        </section>
+
+
+        <!-- les sortie actu -->
+        <section class="movies-section container">
+
+            <div class="section-header">
+
+                <div>
+                    <p class="section-subtitle">AU CINÉMA</p>
+
+                    <h2 class="section-title">
+                        Sorties du moment
+                    </h2>
+                </div>
+
+            </div>
+
+            <div class="movies-grid">
+
+                <article class="movie-card">
+
+                    <div class="movie-poster">
+                        <div class="poster-placeholder">
+                            🎬
+                        </div>
+
+                        <span class="movie-badge">
+                            Nouveau
+                        </span>
+                    </div>
+
+                    <div class="movie-info">
+                        <h3>Film exemple</h3>
+                        <p>2026</p>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- les plus attendu -->
+        <section class="movies-section container">
+
+            <div class="section-header">
+
+                <div>
+                    <p class="section-subtitle">BIENTÔT</p>
+
+                    <h2 class="section-title">
+                        Les plus attendus
+                    </h2>
+                </div>
+
+            </div>
+
+            <div class="movies-grid">
+
+                <article class="movie-card">
+
+                    <div class="movie-poster">
+                        <div class="poster-placeholder">
+                            🎬
+                        </div>
+
+                        <span class="movie-position">
+                            #1
+                        </span>
+                    </div>
+
+                    <div class="movie-info">
+                        <h3>Film attendu</h3>
+                        <p>Bientôt</p>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <p>
+            © 2026 MyMovies
+        </p>
+
+    </footer>
+
+
+    <!-- connex js -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
