@@ -194,7 +194,7 @@ addMovieButton.addEventListener("click", async function () {
     // vérifier le token
     if (
         TMDB_TOKEN === "" ||
-        TMDB_TOKEN === "COLLE_TON_TOKEN_ICI"
+        TMDB_TOKEN === "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0NWRkYWMwYTc3MzIyNjUzZWE4NzE5ZWU0MDU2ZjdlZCIsIm5iZiI6MTc4OTYzMjM0Ny40NTI5OTk4LCJzdWIiOiI2YWFiOWY1YjNjNDA4ZmRmZWUzODAyNjYiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.8UF0WJY3hycWnIq6MZFOKvyhltVhKmZCOXyVs7YlUtE"
     ) {
 
         alert("Tu dois mettre ton token TMDB dans script.js.");
