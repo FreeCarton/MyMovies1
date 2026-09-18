@@ -1,13 +1,6 @@
 // ========================================
 // config tmdb with gpt le goat
-// ========================================
 
-// ⚠️ Mets ton token TMDB entre les guillemets
-// NE PUBLIE PAS ce fichier avec ton vrai token sur GitHub.
-const TMDB_TOKEN = "COLLE_TON_TOKEN_ICI";
-
-
-// ========================================
 // recup les donne html
 // ========================================
 
